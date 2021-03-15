@@ -5,6 +5,7 @@ import EGGIcon from "./media/tokens/eggs.png";
 import ETCIcon from "./media/tokens/etc.png";
 import UBQIcon from "./media/tokens/ubiq.png";
 import MATICIcon from "./media/tokens/matic.png";
+import BNBIcon from "./media/tokens/bnb.png";
 
 export type TokenConfig = {
   address: string;
@@ -43,9 +44,9 @@ export const chainbridgeConfig: ChainbridgeConfig = {
       name: "Ethereum",
       bridgeAddress: "0x31f08a521e697fac0f2af43c1fc633b26be91ddc",
       erc20HandlerAddress: "0xc982ae8247C152f0b4d27f22479E15c66FbF3D44",
-      rpcUrl: "https://node.expanse.tech",
+      rpcUrl: "https://mainnet.infura.io/v3/540c2dbca58c4a1c947eff4e50ea5047",
       type: "Ethereum",
-      blockExplorer: "https://explorer.expanse.tech/tx",
+      blockExplorer: "https://www.etherscan.io/tx",
       nativeTokenSymbol: "ETH",
       tokens: [
         {
@@ -108,10 +109,19 @@ export const chainbridgeConfig: ChainbridgeConfig = {
         {
           address: "0xD13C89Ad0686A974afe911EbfC11C48a72F57390",
           name: "Wrapped Ubiq",
-          symbol: "UBQ",
+          symbol: "wUBQ",
           imageUri: UBQIcon,
           resourceId:
             "0x00000000000000000000001fa6a37c64804c0d797ba6bc1955e50068fbf36208",
+          isNativeWrappedToken: false,
+        },
+        {
+          address: "0x097eEe28cD6Ce752e8C0Bb694cdb50669F83ab89",
+          name: "Wrapped BNB",
+          symbol: "xBNB",
+          imageUri: BNBIcon,
+          resourceId:
+            "0x0000000000000000000000bb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c38",
           isNativeWrappedToken: false,
         },
       ],
@@ -182,7 +192,7 @@ export const chainbridgeConfig: ChainbridgeConfig = {
         {
           address: "0x068adbc25efa195f13e70812904761100046059c",
           name: "Wrapped EXP",
-          symbol: "WEXP",
+          symbol: "wEXP",
           imageUri: WEXPIcon,
           resourceId:
             "0x0000000000000000000000331631B4bb93b9B8962faE15860BD538a389395A02",
@@ -191,7 +201,7 @@ export const chainbridgeConfig: ChainbridgeConfig = {
         {
           address: "0x1fa6a37c64804c0d797ba6bc1955e50068fbf362",
           name: "Wrapped Ubiq",
-          symbol: "UBQ",
+          symbol: "wUBQ",
           imageUri: UBQIcon,
           resourceId:
             "0x00000000000000000000001fa6a37c64804c0d797ba6bc1955e50068fbf36208",
@@ -213,10 +223,19 @@ export const chainbridgeConfig: ChainbridgeConfig = {
         {
           address: "0x1e44681E763E54e770ADFf4B26ea60Fb57625B14",
           name: "Wrapped EXP",
-          symbol: "WEXP",
+          symbol: "wEXP",
           imageUri: WEXPIcon,
           resourceId:
             "0x0000000000000000000000331631B4bb93b9B8962faE15860BD538a389395A02",
+          isNativeWrappedToken: false,
+        },
+        {
+          address: "0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c",
+          name: "Wrapped BNB",
+          symbol: "wBNB",
+          imageUri: BNBIcon,
+          resourceId:
+            "0x0000000000000000000000bb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c38",
           isNativeWrappedToken: false,
         },
       ],

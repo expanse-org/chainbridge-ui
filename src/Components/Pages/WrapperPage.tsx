@@ -437,8 +437,12 @@ const MainPage = () => {
                   {
                     label: (
                       <div className={classes.tokenItem}>
-                        <ETHIcon />
-                        <span>ETH</span>
+                        {/*<ETHIcon />*/}
+                        <img
+                          src={wrapTokenConfig?.imageUri}
+                          alt={homeChain?.nativeTokenSymbol}
+                        />
+                        <span>{homeChain?.nativeTokenSymbol || "ETH"}</span>
                       </div>
                     ),
                     value: "wrap",
