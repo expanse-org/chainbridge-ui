@@ -236,7 +236,7 @@ export const chainbridgeConfig: ChainbridgeConfig = {
           imageUri: BNBIcon,
           resourceId:
             "0x0000000000000000000000bb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c38",
-          isNativeWrappedToken: false,
+          isNativeWrappedToken: true,
         },
       ],
     },
