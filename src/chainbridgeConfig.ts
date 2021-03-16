@@ -116,9 +116,9 @@ export const chainbridgeConfig: ChainbridgeConfig = {
           isNativeWrappedToken: false,
         },
         {
-          address: "0x097eEe28cD6Ce752e8C0Bb694cdb50669F83ab89",
+          address: "0xc1a1c16A18928d08B46ABB61d382579246c6E9E1",
           name: "Wrapped BNB",
-          symbol: "xBNB",
+          symbol: "eBNB",
           imageUri: BNBIcon,
           resourceId:
             "0x0000000000000000000000bb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c38",
