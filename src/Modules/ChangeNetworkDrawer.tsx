@@ -68,7 +68,7 @@ const ChangeNetworkDrawer: React.FC<IChangeNetworkDrawerProps> = ({
         </Button>
         <a
           rel="noopener noreferrer"
-          href="https://discord.com/invite/n2U6x9c"
+          href="https://discord.gg/Cf9VCXR"
           target="_blank"
         >
           <Button variant="outline">Ask a question on Discord</Button>
