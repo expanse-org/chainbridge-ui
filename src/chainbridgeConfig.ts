@@ -264,7 +264,7 @@ export const chainbridgeConfig: ChainbridgeConfig = {
           resourceId:
             "0x0000000000000000000000331631B4bb93b9B8962faE15860BD538a389395A02",
           isNativeWrappedToken: false,
-        }
+        },
       ],
     },
     {
