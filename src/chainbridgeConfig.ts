@@ -37,6 +37,7 @@ export type ChainbridgeConfig = {
 
 export const chainbridgeConfig: ChainbridgeConfig = {
   // Goerli - Kotti Bridge
+  /*
   chains: [
     {
       chainId: 1,
@@ -241,7 +242,89 @@ export const chainbridgeConfig: ChainbridgeConfig = {
       ],
     },
   ],
+  */
 
+  chains: [
+    {
+      chainId: 61,
+      networkId: 61,
+      name: "EthereumClassic",
+      bridgeAddress: "0x1e44681E763E54e770ADFf4B26ea60Fb57625B14",
+      erc20HandlerAddress: "0x068adbc25efa195f13e70812904761100046059c",
+      rpcUrl: "https://africa.room-house.com",
+      type: "Ethereum",
+      blockExplorer: "https://www.etherscan.io/tx",
+      nativeTokenSymbol: "ETC",
+      tokens: [
+        {
+          address: "0xC78c8dBF31fC3fB34F3bDb3Ac7f6C056De4CDa87",
+          name: "Wrapped EXP",
+          symbol: "wEXP",
+          imageUri: WEXPIcon,
+          resourceId:
+            "0x0000000000000000000000331631B4bb93b9B8962faE15860BD538a389395A02",
+          isNativeWrappedToken: false,
+        }
+      ],
+    },
+    {
+      chainId: 2,
+      networkId: 2,
+      name: "Expanse",
+      bridgeAddress: "0xfDcDD3eE5D5d99EEDB2fCb38927378199E51a4Cc",
+      erc20HandlerAddress: "0xD1A05D56876f78ef99cf7D726ADEbaDC4409911f",
+      rpcUrl: "https://node.eggs.cool",
+      type: "Ethereum",
+      blockExplorer: "https://explorer.expanse.tech/tx",
+      nativeTokenSymbol: "EXP",
+      tokens: [
+        {
+          address: "0x331631B4bb93b9B8962faE15860BD538a389395A",
+          name: "Wrapped EXP",
+          symbol: "wEXP",
+          imageUri: WEXPIcon,
+          resourceId:
+            "0x0000000000000000000000331631B4bb93b9B8962faE15860BD538a389395A02",
+          isNativeWrappedToken: true,
+        },
+        {
+          address: "0xd1365a5Af713cde10C6ac3fB9EDBB2bBbd4B2Ba2",
+          name: "Eggswap",
+          symbol: "EGG",
+          imageUri: EGGIcon,
+          resourceId:
+            "0x0000000000000000000000d1365a5Af713cde10C6ac3fB9EDBB2bBbd4B2Ba202",
+        },
+        {
+          address: "0x69D050EfFA61306e7e7A8a6338Ca2d3921495801",
+          name: "Wrapped ETH",
+          symbol: "wETH",
+          imageUri: WETHIcon,
+          resourceId:
+            "0x0000000000000000000000c02aaa39b223fe8d0a0e5c4f27ead9083c756cc201",
+          isNativeWrappedToken: false,
+        },
+        {
+          address: "0xD13C89Ad0686A974afe911EbfC11C48a72F57390",
+          name: "Wrapped Ubiq",
+          symbol: "wUBQ",
+          imageUri: UBQIcon,
+          resourceId:
+            "0x00000000000000000000001fa6a37c64804c0d797ba6bc1955e50068fbf36208",
+          isNativeWrappedToken: false,
+        },
+        {
+          address: "0xc1a1c16A18928d08B46ABB61d382579246c6E9E1",
+          name: "Wrapped BNB",
+          symbol: "eBNB",
+          imageUri: BNBIcon,
+          resourceId:
+            "0x0000000000000000000000bb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c38",
+          isNativeWrappedToken: false,
+        },
+      ],
+    },
+  ],
   // DEVNET
   //   erc20ResourceId:
   //   "0x00000000000000000000000021605f71845f372A9ed84253d2D024B7B10999f4",
